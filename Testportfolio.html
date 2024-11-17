@@ -1,0 +1,302 @@
+<section class="portfolio-section" id="portfolio">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portfolio</title>
+      <h2 class="portfolio-title">portfolio</h2>  
+      <link rel="stylesheet" href="portfoliostyle.css">
+  </head>
+  <body>
+      <div class="container">
+          <div class="projects-grid" id="projects-grid">
+              <!-- Initial 4 Projects -->
+              <div class="project">
+                  <h2>Custom-Homes</h2>
+                  <img src="image/15.png" alt="Project 1">
+                  <button class="view-button" onclick="viewProject(1)">Custom-Homes</button>
+              </div>
+              <div class="project">
+                  <img src="image/22.png" alt="Project 2">
+                  <button class="view-button" onclick="viewProject(2)">View</button>
+              </div>
+              <div class="project">
+                  <img src="image/28.png" alt="Project 3">
+                  <button class="view-button" onclick="viewProject(3)">View</button>
+              </div>
+              <div class="project">
+                  <img src="image/39.png" alt="Project 4">
+                  <button class="view-button" onclick="viewProject(4)">View</button>
+              </div>
+          </div>
+          <div class="navigation">
+              <button id="prev-button" class="nav-button" onclick="prevPage()">&#10094;</button>
+              <button id="next-button" class="nav-button" onclick="nextPage()">&#10095;</button>
+          </div>
+      </div>
+  
+      <!-- Modal -->
+      <div id="modal" class="modal">
+          <div class="modal-content">
+              <span class="close-button" id="close-button">&times;</span>
+              <p id="project-description"></p>
+          </div>
+      </div>
+  
+      <script src="portfolioscript.js"></script>
+  </body>
+  </section> 
+  
+  <style>
+  /* Portfolio Section Styles */
+.portfolio-section {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+
+.container {
+    text-align: center;
+    margin-left: 10px;
+}
+
+.portfolio-title {
+    font-family: 'Lexend Tera', sans-serif;
+    font-weight: 500;
+    align-self: start;
+    margin-top: 20px;
+    text-transform: uppercase;
+    margin-right: 640px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-left: -410px;
+    margin-right: 380px;
+}
+
+.project {
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    width: 250px;
+    height: 200px;
+    opacity: 0; /* Start hidden */
+}
+
+.project img {
+    width: 250px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+}
+
+.view-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+    font: 400 18px Lexend Tera, sans-serif;
+    border: none;
+}
+
+.nav-button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: rgb(11, 11, 11);
+    border: none;
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.navigation {
+    display: flex;
+    width: 50%;
+    max-width: 400px;
+    margin-left: 370px;
+}
+
+.nav-button:hover {
+    background-color: #ffffff;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animation Keyframes */
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-top {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-bottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-left {
+    animation: slide-in-left 0.5s forwards;
+}
+
+.slide-in-right {
+    animation: slide-in-right 0.5s forwards;
+}
+
+.slide-in-top {
+    animation: slide-in-top 0.5s forwards;
+}
+
+.slide-in-bottom {
+    animation: slide-in-bottom 0.5s forwards;
+}
+
+
+
+  </style>
+
+  <script>
+ const projects = [
+    { id: 1, image: 'image/15.png', description: '$850K - $1.5M', buttonLabel: 'Custom-Homes' },
+    { id: 2, image: 'image/22.png', description: 'Description of Project 2', buttonLabel: 'WareHouse' },
+    { id: 3, image: 'image/28.png', description: 'Description of Project 3', buttonLabel: 'Home Additions' },
+    { id: 4, image: 'image/39.png', description: 'Description of Project 4', buttonLabel: 'Basement renovations' },
+    { id: 5, image: 'project5.jpg', description: 'Description of Project 5', buttonLabel: 'Home Renovation' },
+    { id: 6, image: 'project6.jpg', description: 'Description of Project 6', buttonLabel: 'Landscaping and Fencing ' },
+    { id: 7, image: 'project7.jpg', description: 'Description of Project 7', buttonLabel: 'Other Renovations' },
+    { id: 8, image: 'project8.jpg', description: 'Description of Project 8', buttonLabel: 'Custom-Homes' }
+];
+
+let currentPage = 1;
+const projectsPerPage = 4;
+
+const animationClasses = ['slide-in-left', 'slide-in-right', 'slide-in-top', 'slide-in-bottom'];
+
+function displayProjects(page) {
+    const start = (page - 1) * projectsPerPage;
+    const end = start + projectsPerPage;
+    const projectsToDisplay = projects.slice(start, end);
+
+    const projectsGrid = document.getElementById('projects-grid');
+    projectsGrid.innerHTML = '';
+
+    projectsToDisplay.forEach((project, index) => {
+        const projectElement = document.createElement('div');
+        projectElement.className = `project ${animationClasses[index % animationClasses.length]}`;
+        projectElement.style.animationDelay = `${index * 0.1}s`; // Stagger animation start times
+        projectElement.innerHTML = `
+            <img src="${project.image}" alt="Project ${project.id}">
+            <button class="view-button" onclick="viewProject(${project.id})">${project.buttonLabel}</button>
+        `;
+        projectsGrid.appendChild(projectElement);
+    });
+}
+
+function viewProject(id) {
+    const project = projects.find(p => p.id === id);
+    document.getElementById('project-description').innerText = project.description;
+    document.getElementById('modal').style.display = 'block';
+}
+
+document.getElementById('close-button').addEventListener('click', () => {
+    document.getElementById('modal').style.display = 'none';
+});
+
+function nextPage() {
+    if (currentPage < Math.ceil(projects.length / projectsPerPage)) {
+        currentPage++;
+        displayProjects(currentPage);
+    }
+}
+
+function prevPage() {
+    if (currentPage > 1) {
+        currentPage--;
+        displayProjects(currentPage);
+    }
+}
+
+// Initial display
+displayProjects(currentPage);
+
+  </script>

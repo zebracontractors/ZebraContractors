@@ -1,0 +1,339 @@
+.about-section {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #000; /* Example border style */
+  margin: 20px 0; /* Adjust spacing */
+}
+
+.about-title {
+  font-family: 'Lexend Tera', sans-serif;
+  font-weight: 500;
+  align-self: start;
+  margin-top: 20px;
+  text-transform: uppercase;
+  margin-right: -50px;
+}
+
+.about-slider {
+  position: relative;
+  width: 30%;
+  overflow: hidden;
+  background: #fff;
+  margin-left: -1520px;
+  margin-top: -10px;
+}
+
+.about-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.about-p-slider {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  overflow: hidden;
+  background: #fff;
+  margin-right: 1590px;
+  margin-left: -110px;
+  margin-top: 30px;
+}
+
+.about-p-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.about-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  height: 80vh;
+}
+
+.about-p-slide {
+  min-width: 95%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+.image-container {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.firstimagetext {
+  -webkit-text-stroke-width: 2;
+  -webkit-text-stroke-color: #000;
+  border: 2px solid black;
+  animation: glowing-border 2s infinite alternate;
+  background-color: #fff;
+  align-self: end;
+  color: #111111;
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: center;
+  padding: 19px 23px;
+  font: 400 18px Lexend Tera, sans-serif;
+  margin-top: 1415px;
+}
+
+.firsttext {
+  font-family: Lexend Tera, sans-serif;
+  align-self: center;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-top: 60px;
+  margin-left: 80px;
+}
+
+.firstP {
+  color: #000;
+  text-transform: capitalize;
+  margin-top: 100px;
+  font: 300 16px Lexend Exa, sans-serif;
+  margin-left: 80px;
+  text-align: left;
+}
+
+.secondimagetext {
+  -webkit-text-stroke-width: 2;
+  -webkit-text-stroke-color: #000;
+  border: 2px solid black;
+  animation: glowing-border 2s infinite alternate;
+  background-color: #fff;
+  align-self: end;
+  color: #111111;
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: center;
+  padding: 19px 23px;
+  font: 400 18px Lexend Tera, sans-serif;
+  margin-top: 115px;
+}
+
+.about-secondtext {
+  font-family: Lexend Tera, sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-top: 15px;
+  margin-left: 80px;
+  text-align: left;
+  align-self: center;
+}
+
+.about-secondP {
+  color: #000;
+  text-transform: capitalize;
+  font: 300 16px Lexend Exa, sans-serif;
+  margin-left: 80px;
+  margin-top: 35px;
+}
+
+.thirdimagetext {
+  -webkit-text-stroke-width: 2;
+  -webkit-text-stroke-color: #000;
+  border: 2px solid black;
+  animation: glowing-border 2s infinite alternate;
+  background-color: #fff;
+  align-self: end;
+  color: #111111;
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: center;
+  padding: 19px 23px;
+  font: 400 17px Lexend Tera, sans-serif;
+  margin-top: 115px;
+}
+
+.thirdtext {
+  font-family: Lexend Tera, sans-serif;
+  align-self: center;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 30px;
+  margin-top: 80px;
+  margin-left: 80px;
+}
+
+.thirdP {
+  color: #000;
+  text-transform: capitalize;
+  margin-top: 115px;
+  font: 300 16px Lexend Exa, sans-serif;
+  text-align: left;
+}
+
+.fourthimagetext {
+  -webkit-text-stroke-width: 2;
+  -webkit-text-stroke-color: #000;
+  border: 2px solid black;
+  animation: glowing-border 2s infinite alternate;
+  background-color: #fff;
+  align-self: end;
+  color: #111111;
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: center;
+  padding: 19px 23px;
+  font: 400 18px Lexend Tera, sans-serif;
+  margin-top: 115px;
+}
+
+.fourthtext {
+  font-family: Lexend Tera, sans-serif;
+  align-self: center;
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 30px;
+  margin-top: 80px;
+  margin-left: 80px;
+}
+
+.fourthP {
+  color: #000;
+  text-transform: capitalize;
+  margin-top: 150px;
+  font: 300 16px Lexend Exa, sans-serif;
+  margin-left: 80px;
+}
+
+.text-container {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.button-container button {
+  background-color: white; /* Button background color */
+  color: black; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 2s ease; /* Smooth transition */
+  position: relative; /* Relative position for pseudo-elements */
+  top: -40px;
+}
+
+.button-container button.prev {
+  left: -14%; /* Initially centered */
+  transform: translateX(-50%); /* Initially centered */
+}
+
+.button-container button.next {
+  right: 53%; /* Initially centered */
+  transform: translateX(50%); /* Initially centered */
+}
+
+.button-container button:hover {
+  background-color: white; /* Darker background color on hover */
+}
+
+.button-container button.prev:hover {
+  left: -20%; /* Move to the left on hover */
+}
+
+.button-container button.next:hover {
+  right: 49%; /* Move to the right on hover */
+}
+
+.button-container button:focus {
+  outline: none;
+}
+
+/* Tablet view */
+@media (max-width: 1024px) {
+  .about-slider,
+  .about-p-slider {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  .about-title {
+      margin-right: 0;
+      margin-left: 20px;
+  }
+
+  .firsttext, .about-secondtext, .thirdtext, .fourthtext {
+      font-size: 24px;
+      margin-left: 40px;
+  }
+
+  .firstP, .about-secondP, .thirdP, .fourthP {
+      margin-left: 40px;
+      font-size: 14px;
+  }
+
+  .button-container button.prev {
+      left: -10%;
+  }
+
+  .button-container button.next {
+      right: 49%;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .about-slider,
+  .about-p-slider {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  .about-title {
+      font-size: 24px;
+      margin-right: 0;
+      margin-left: 10px;
+  }
+
+  .firsttext, .about-secondtext, .thirdtext, .fourthtext {
+      font-size: 20px;
+      margin-left: 20px;
+  }
+
+  .firstP, .about-secondP, .thirdP, .fourthP {
+      margin-left: 20px;
+      font-size: 12px;
+  }
+
+  .image-container img {
+      width: 100%;
+      height: auto;
+  }
+
+  .button-container button.prev {
+      left: -5%;
+  }
+
+  .button-container button.next {
+      right: 47%;
+  }
+}

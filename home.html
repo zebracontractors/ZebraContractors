@@ -1,0 +1,540 @@
+<html>
+<header class="header">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap">
+    <title>ZEBRA CONTRACTORS</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</header>
+<body>
+  <div id="datetime"></div>  
+  <div class="header-content">
+    <section class="hero-section">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+      <div class="hero-content">
+        <!-- <img src="image/zebragif.gif" alt="Hero image" class="hero-image" /> -->
+        <video id="constructionvideo" width="1200" height="850" autoplay muted playsinline loop>
+          <source src="image/homevideo.mp4" type="video/mp4">
+          </video>
+          <div id="muteStatus" class="mute-status">   <i class="fas fa-volume-mute"></i> </div>
+        <p class="hero-text hero-text-with-padding">
+          NO DREAM IS EVER CHASE ALONE 
+          YOU DREAM IT WE BUILD IT.    
+        </p>
+
+        
+        <script>
+           // Function to toggle the video mute status
+  function toggleMute() {
+    var video = document.getElementById('constructionvideo');
+    video.muted = !video.muted;
+    updateMuteStatus();
+  }
+
+  // Function to update the mute status text and icon
+  function updateMuteStatus() {
+    var video = document.getElementById('constructionvideo');
+    var status = document.getElementById('muteStatus');
+    if (video.muted) {
+      status.innerHTML = '<i class="fas fa-volume-mute"></i>';
+    } else {
+      status.innerHTML = '<i class="fas fa-volume-up"></i>';
+    }
+  }
+
+  // Add event listener to the muteStatus div to toggle mute on click
+  document.getElementById('muteStatus').addEventListener('click', toggleMute);
+
+  // Initial update of the mute status text
+  updateMuteStatus();
+      </script>
+
+      </div>
+    </section>
+
+    <nav class="nav-section">
+      <div class="nav-content">
+        <!-- <h1 class="nav-title">ZEBRA</h1>
+        <h4 class = "nav-title1">CONTRACTORS</h4> -->
+         <img src="image/logoz.png" alt="ZEBRA CONTRACTORS" class="hero-logo"/>
+        <div class="nav-links">
+          <!-- <button class="nav-link nav-link-contractors" onclick="handleContractorsClick()">
+            CONTRACTORS -->
+          </button>
+          <button class="nav-link nav-link-about" onclick="scrollToAbout()">
+            ABOUT
+          </button> 
+          <button class="nav-link nav-link-services" onclick="scrollToService()">
+            SERVICES
+          </button>
+          <button class="nav-link nav-link-portfolio" onclick="scrollToPortfolio()">
+            PORTFOLIO
+          </button>
+          <button class="nav-link nav-link-team" onclick="scrollToTeam">
+            TEAM
+          </button>
+          <button class="nav-link nav-link-contact" onclick="scrollToContactUs()">
+            CONTACT
+          </button>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+
+
+<script>
+ 
+//   function handleAboutClick() {
+//   window.location.href = 'about.html';
+//   console.log('About button clicked');
+
+// }
+function scrollToAbout() {
+      const aboutSection = document.getElementById('about');
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    function scrollToService() {
+      const aboutSection = document.getElementById('services');
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    function scrollToPortfolio() {
+      const aboutSection = document.getElementById('portfolio');
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    function scrollToTeam() {
+      const aboutSection = document.getElementById('team');
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    function scrollToContactUs() {
+      const aboutSection = document.getElementById('contact');
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+   
+  // function handleServicesClick() {
+  //     window.location.href = 'service.html';
+  //   console.log('Services button clicked');
+  // }
+
+  // function handlePortfolioClick() {
+  //     window.location.href = 'portfolio.html';
+  //   console.log('Portfolio button clicked');
+  // }
+
+  // function handleTeamClick() {
+  //     window.location.href = 'team.html';
+  //   console.log('Team button clicked');
+  // }
+
+  // function handleContactClick() {
+  //     window.location.href = 'contact.html';
+  //   console.log('Contact button clicked');
+  // }
+
+  function updateDateTime() {
+  const datetimeElement = document.getElementById("datetime");
+  const now = new Date();
+
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true };
+  const formattedDateTime = now.toLocaleDateString('en-US', options);
+  
+  datetimeElement.textContent = formattedDateTime;
+}
+
+// Update date and time every second
+setInterval(updateDateTime, 1000);
+
+// Initial call to display date and time immediately
+updateDateTime();
+
+</script>
+
+<!-- <hr> -->
+
+<div class="separator gradient"></div>
+<!-- <div class="separator"></div> -->
+
+<!--ABOUT-->
+ <section class="about-section" id="about">
+  <head>
+      <meta charset="UTF-8">
+       <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap">
+      <h2 class="about-title">about</h2>  
+      <link rel="stylesheet" href="aboutstylee.css"> 
+  </head>
+  <body>   
+      <div class="about-p-slider">
+          <div class="about-p-slides">
+              <div class="about-p-slide">
+                      <h2 class="firsttext">
+                          Zebra Construction
+                          Your Dream Builder
+                        </h2>
+                        <p class="firstP">
+                          <strong>Welcome to Zebra Construction Team</strong>, your trusted partner in <strong>construction solutions</strong>. With over <strong>20 years of combined expertise</strong> spanning all facets of the <strong>construction industry</strong>, we bring unparalleled knowledge and specialization in <strong>construction management services</strong>, <strong>new home constructions</strong>, and <strong>commercial construction</strong>.
+  
+                          Our <strong>seasoned team</strong> offers tailored <strong>recommendations and consulting services</strong> to meet the unique needs of every project. From overseeing <strong>construction projects</strong> to addressing issues in real time, we ensure <strong>smooth project execution</strong> and <strong>owner satisfaction</strong>.
+                  
+                          With a deep understanding of <strong>design and engineering</strong>, we collaborate closely with owners to bring their visions to life. Our <strong>project management</strong> and <strong>field teams</strong> consist of skilled experts dedicated to surpassing <strong>client expectations</strong>.
+                  
+                          At Zebra, we take pride in every aspect of our projects, from <strong>planning and development</strong> to <strong>community engagement</strong>.
+                  
+                          Remember, at <strong>Zebra Construction Team</strong>, we don't just construct structures—we bring dreams to life.</p>
+                        </p>
+              </div>
+              <div class="about-p-slide">
+                <h2 class="about-secondtext">
+                 <p> Experience the Zebra Difference:Where Excellence Meets Integrity </p>
+                </h2>
+                <p class="about-secondp">
+                  At <strong>Zebra Contractors,</strong>Our <strong>mission</strong> is to deliver <strong>excellence in construction</strong> and <strong>management services</strong>, exceeding <strong>client expectations</strong> and contributing to the development of <strong>sustainable communities</strong>. We envision being the <strong>premier choice</strong> for clients seeking <strong>innovative solutions</strong>, <strong>exceptional quality</strong>, and unmatched <strong>reliability in the construction industry</strong>.
+                  
+                  Our core values of <strong>integrity</strong>, <strong>professionalism</strong>, <strong>collaboration</strong>, and <strong>sustainability</strong> guide every aspect of our work. We prioritize <strong>integrity</strong> in all our dealings, ensuring <strong>transparency</strong> and <strong>honesty</strong> with our clients and partners. <strong>Professionalism</strong> is at the forefront of everything we do, from <strong>project management</strong> to <strong>customer service</strong>.
+                  
+                  <strong>Collaboration</strong> is key to our success, as we believe in fostering strong partnerships to achieve mutual goals. Finally, <strong>sustainability</strong> is a core commitment, as we strive to minimize <strong>environmental impact</strong> and promote <strong>sustainable practices</strong> in all our projects. Trust <strong>Zebra Contractors</strong> for <strong>construction</strong> and <strong>management services</strong> that align with your values and exceed your expectations.                                                                                                                                                                                                                                                                                                            
+  
+                </p>
+              </div>
+              <div class="about-p-slide">
+                <h2 class="thirdtext">
+                  Embedding Safety and Quality in Our Company Culture 
+                </h2>
+                <p class="thirdp">
+                  <strong>Safety and quality assurance</strong> are paramount at <strong>Zebra Contractors</strong>, embedded deeply within our company culture. We prioritize the well-being of our team members and stakeholders, implementing rigorous <strong>safety protocols</strong> and procedures on every job site. Our commitment to excellence extends to <strong>quality assurance</strong>, where we uphold the highest standards in <strong>construction practices</strong> and materials. Through continuous training and education, we empower our employees to prioritize safety and deliver quality workmanship consistently.
+  
+                  At <strong>Zebra Contractors</strong>, <strong>safety</strong> is not just a requirement; it's a core value that informs every decision we make. Our proactive approach to safety ensures that potential hazards are identified and mitigated before they become risks. Additionally, our comprehensive <strong>quality assurance program</strong> involves regular inspections and assessments to maintain the integrity and longevity of our projects.
+  
+                  Trust <strong>Zebra Contractors</strong> for <strong>construction</strong> and <strong>management services</strong> that prioritize safety, quality, and excellence, reflecting our unwavering commitment to our clients and communities.
+                </p>
+              </div>
+              <div class="about-p-slide">
+                <h2 class="fourthtext">
+                  Safety-First Excellence: Zebra Contractors Leading the Way in Quality Construction Services
+                </h2>
+                <p class="fourthp">
+                  When you partner with <strong>Zebra Contractors</strong>, you're partnering with a team that places <strong>safety</strong>, <strong>quality</strong>, and <strong>excellence</strong> at the forefront of everything we do. Our unwavering commitment to these principles is evident in every project we undertake, reflecting our dedication to our clients and communities.
+
+                  Count on <strong>Zebra Contractors</strong> for construction and management services that prioritize <strong>safety</strong>, <strong>quality</strong>, and <strong>excellence</strong>, embodying our steadfast commitment to delivering superior results.
+                </p>
+              </div>
+          </div>
+      </div>
+      
+      <div class="about-slider">
+          <div class="about-slides">
+              <div class="about-slide">
+                    <div class="text-container">
+                     <h4 class="firstimagetext">who we are</h4> 
+                  </div> 
+                  <div class="image-container">
+                      <img src="image/who we are 1.jpeg" alt="Image 1" >
+                  </div>
+                 
+              </div>
+              <div class="about-slide">
+                <div class="text-container">
+                  <h4 class="secondimagetext">Building Sustainable Communities</h4> 
+                  </div>
+                  <div class="image-container">
+                      <img src="image/community.jpeg" alt="Image 2">
+                  </div>
+              </div>
+              <div class="about-slide">
+                <div class="text-container">
+                  <h4 class="thirdimagetext">Our Commitment</h4> 
+              </div>
+                  <div class="image-container">
+                      <img src="image/commitment12.jpg" alt="Image 3">
+                  </div>
+                  
+              </div>
+              <div class="about-slide">
+                <div class="text-container">
+                  <h4 class="fourthimagetext">Trusted Partners</h4> 
+              </div>
+                  <div class="image-container">
+                      <img src="image/trusted-partner.jpeg" alt="Image 4">
+                  </div>
+              
+              </div>
+          </div>
+          <div class="button-container">
+              <button class="prev" onclick="moveAboutSlide(-1)">&#10094; </button>
+              <button class="next" onclick="moveAboutSlide(1)"> &#10095;</button>
+
+          </div>
+      </div>
+      <script src="aboutscript.js"></script>
+  </body>
+  </section> 
+
+<!-- <hr> -->
+<!-- <div class="separator"></div> -->
+<div class="separator gradient"></div>
+
+<!--SERVICES-->
+ <section class="services-section" id="services">
+<head>
+    <meta charset="UTF-8">
+     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap">
+    <h2 class="services-title">services</h2>
+    <link rel="stylesheet" href="servicestyle.css"> 
+</head>
+<body>
+    <div class="service-slider">
+        <div class="service-slides">
+            <div class="service-slide">
+                  <div class="text-container">
+                   <h4 class="firstimagetext">Custom Pre-Construction</h4> 
+                </div> 
+                <div class="image-container">
+                    <img src="image/custom precon.jpg" alt="Image 1" >
+                </div>
+               
+            </div>
+            <div class="service-slide">
+              <div class="text-container">
+                <h4 class="secondimagetext">General Contracting</h4> 
+                </div>
+                <div class="image-container">
+                    <img src="image/general contracting.jpg" alt="Image 2">
+                </div>
+            </div>
+            <div class="service-slide">
+              <div class="text-container">
+                <h4 class="thirdimagetext">Construction Management</h4> 
+            </div>
+                <div class="image-container">
+                    <img src="image/CM.jpeg" alt="Image 3">
+                </div>
+                
+            </div>
+            <div class="service-slide">
+              <div class="text-container">
+                <h4 class="fourthimagetext">Commercial Construction</h4> 
+            </div>
+                <div class="image-container">
+                    <img src="image/Commercial.jpg" alt="Image 4">
+                </div>
+                
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="prev" onclick="moveServiceSlide(-1)">&#10094; </button>
+            <button class="next" onclick="moveServiceSlide(1)"> &#10095;</button>
+        </div>
+    </div>
+
+    <div class="service-p-slider">
+        <div class="service-p-slides">
+            <div class="service-p-slide">
+                <div class="text-container">
+                    <h2 class="firsttext">
+                        Our dedication to clients is evident in the services we provide
+                      </h2>
+                      <p class="firstP">
+                      At <strong>Zebra Construction</strong>, we understand the importance of the <strong>pre-construction phase</strong> in laying the groundwork for successful projects. As your reliable partner, we offer tailored consulting services designed to meet your unique needs and goals. Our <strong>experienced team</strong> takes the lead during the design phase, coordinating all discipline designs to ensure seamless integration and efficiency. We provide valuable guidance and advice to owners, assisting with <strong>value engineering</strong> to maximize project value while minimizing costs. Additionally, we specialize in preparing <strong>construction budgets</strong>, offering detailed insights and projections to help you plan and execute your project effectively. With Zebra Construction, you can trust in our expertise to navigate the complexities of <strong>pre-construction</strong> with confidence.
+                      </p>
+                          
+                </div>
+            </div>
+            <div class="service-p-slide">
+              <h2 class="secondtext">
+                Your Trusted Partner from Concept to Completion
+              </h2>
+              <p class="secondp">
+               Our <strong>general contracting services</strong> provide a seamless and comprehensive solution for <strong>construction projects</strong>, ensuring <strong>timely delivery</strong>, <strong>budget adherence</strong>, and top-notch quality. From <strong>project conception to completion</strong>, our <strong>experienced team</strong> oversees every aspect, including planning, <strong>subcontractor management</strong>, scheduling, and <strong>regulatory compliance</strong>. With clear communication and collaboration, we ensure that all stakeholders' <strong>visions are realized</strong>.
+
+              Beyond construction, we offer <strong>ongoing support and maintenance</strong> for long-term satisfaction. Trusted across industries for <strong>reliability</strong> and professionalism, our services are sought by clients looking for <strong>outstanding results</strong>. Let us be your partner in bringing your <strong>construction vision</strong> to life.
+
+               Choose us for your next project and experience the difference our <strong>general contracting services</strong> can make. Contact us today to discuss how we can help turn your <strong>construction ideas</strong> into reality.                                                                                                                                                                                                                                                                                                                                    
+
+              </p>
+            </div>
+            <div class="service-p-slide">
+              <h2 class="thirdtext">
+                End-to-End Construction Solutions: Your Vision, Our Expertise 
+              </h2>
+              <p class="thirdp">
+                At <strong>Zebra Contractors</strong>, we deliver top-tier <strong>construction management services</strong> tailored to your project needs. Our expert team meticulously coordinates every aspect, from <strong>initial planning</strong> and <strong>budgeting</strong> to <strong>on-site supervision</strong> and <strong>quality control</strong>. Skilled leaders guide teams through challenges, ensuring projects stay on track and within budget.With keen attention to detail and effective communication, we navigate complexities while adhering to timelines. Through collaboration and problem-solving, <strong>Zebra Contractors</strong> optimizes efficiency for successful outcomes. Trust us as your dedicated partner in <strong>construction management</strong>, committed to excellence in every endeavor.
+              </p>
+            </div>
+            <div class="service-p-slide">
+              <h2 class="fourthtext">
+                Tailored Solutions for Your Commercial Vision
+              </h2>
+              <p class="fourthp">
+                <strong>Zebra Contractors</strong> excel in <strong>commercial construction</strong>, providing tailored solutions for your unique projects. With a track record of success, we manage every phase, from <strong>initial planning</strong> to final completion. Our expert team ensures <strong>efficient project management</strong>, adhering to strict timelines and budgets while upholding <strong>quality standards</strong>. Whether it's <strong>office buildings</strong>, <strong>retail spaces</strong>, or <strong>hospitality facilities</strong>, count on <strong>Zebra Contractors</strong> to bring your commercial vision to life with <strong>professionalism</strong> and <strong>reliability</strong>.
+
+              </p>
+            </div>
+        </div>
+    </div>
+    <script src="servicescript.js"></script>
+</body>
+</section>
+
+<!-- <hr> -->
+<!-- <div class="separator"></div> -->
+<div class="separator gradient"></div>
+
+<!-- PORTFOLIO -->
+
+<section class="portfolio-section" id="portfolio">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <h2 class="portfolio-title">portfolio</h2>  
+    <link rel="stylesheet" href="portfoliostyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="projects-grid" id="projects-grid">
+            <!-- Initial 4 Projects -->
+            <div class="project">
+                <h2>Custom-Homes</h2>
+                <img src="image/15.png" alt="Project 1">
+                <button class="view-button" onclick="viewProject(1)">Custom-Homes</button>
+            </div>
+            <div class="project">
+                <img src="image/22.png" alt="Project 2">
+                <button class="view-button" onclick="viewProject(2)">View</button>
+            </div>
+            <div class="project">
+                <img src="image/28.png" alt="Project 3">
+                <button class="view-button" onclick="viewProject(3)">View</button>
+            </div>
+            <div class="project">
+                <img src="image/39.png" alt="Project 4">
+                <button class="view-button" onclick="viewProject(4)">View</button>
+            </div>
+        </div>
+        <div class="navigation">
+            <button id="prev-button" class="nav-button" onclick="prevPage()">&#10094;</button>
+            <button id="next-button" class="nav-button" onclick="nextPage()">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-button">&times;</span>
+            <p id="project-description"></p>
+        </div>
+    </div>
+
+    <script src="portfolioscript.js"></script>
+</body>
+</section> 
+
+<!-- <div class="separator"></div> -->
+<div class="separator gradient"></div>
+
+
+<!--CONTACT US-->
+
+<section class="contact-us-section" id="contact">
+  <link rel="stylesheet" href="contactstyle.css">
+  <h2 class="contact-us-title">Contact Us</h2>
+  <div class="contact-us-content">
+      <div class="contact-us-columns">
+          <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d369107.5366642906!2d-79.7076989920169!3d43.7177675396109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON!5e0!3m2!1sen!2sca!4v1721852475836!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="contact-us-form-column">
+              <div class="contact-us-hours">
+                  <p class="contact-us-hours-text">
+                      Hours<br /><br />
+                      Mon-Fri 8 am - 5 pm<br />
+                      Sat-Sun 9 am - 5 pm<br />
+                  </p>
+              </div>
+              <form class="contact-us-form" name="submit-to-google-sheet">
+                  <div class="contact-us-form-row">
+                      <label for="name" class="visually-hidden">Name</label>
+                      <input type="text" id="name" placeholder="Name"  name="Name" class="contact-us-form-input" required />
+                      <label for="email" class="visually-hidden" >Email</label>
+                      <input type="email" id="email" placeholder="Email" name="Email" class="contact-us-form-input" required />
+                  </div>
+                  <label for="phone" class="visually-hidden" >Contact number</label>
+                  <input type="tel" id="phone" placeholder="Contact number" name="Phone" class="contact-us-form-input" required />
+                  <label for="comments" class="visually-hidden" >Comments</label>
+                  <textarea id="comments" placeholder="Comments" name="Comments" class="contact-us-form-textarea" required></textarea>
+                  <button type="submit" class="contact-us-form-submit">Send</button>
+                  <p id="msg" class="contact-us-form-message"></p>
+              </form>
+          </div>
+      </div>
+      <div class="contact-us-social">
+          <div class="contact-us-social-icons">
+              <img src="image/icons8-microsoft-outlook-2019-48.png" alt="" class="contact-us-social-icon" />
+              <img src="image/icons8-instagram-48.png" alt="" class="contact-us-social-icon-small" />
+          </div>
+          <div class="contact-us-phone">
+              <img src="image/icons8-facebook-48.png" alt="" class="contact-us-phone-icon" />
+              <span class="contact-us-phone-number">647-773-3956</span>
+          </div>
+      </div>
+  </div>
+</section>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzYktJLHuTMfNEyg2VoWII5x37lRWj8Ama50DOvcwKXiSLPBMmOUGQyYvdsQC4r3JcwGQ/exec';
+  const form = document.forms['submit-to-google-sheet'];
+  const msg = document.getElementById('msg');
+
+  form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+              msg.innerHTML = "Message sent successfully";
+              setTimeout(() => { msg.innerHTML = ""; }, 5000);
+              form.reset();
+          })
+          .catch(error => {
+              msg.innerHTML = "Error: " + error.message;
+              setTimeout(() => { msg.innerHTML = ""; }, 5000);
+          });
+  });
+</script>
+  <!-- Footer -->
+   <footer>
+    <link rel="stylesheet" href="footerstyle.css">
+        <div class="footer-container">
+        <div class="footer-section">
+            <h4>About Us</h4>
+            <p>ZebraContractors builds high-quality, expertly crafted residences designed to meet the highest standards.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Email: thezebracontractors@gmail.com</p>
+            <p>Phone: (365) 777- 6062</p>
+        </div>
+        <!-- <div class="footer-section-icons">
+            <img src="image/icons8-microsoft-outlook-2019-48.png" alt="" class="contact-us-social-icon" />
+            <img src="image/icons8-instagram-48.png" alt="" class="contact-us-social-icon-small" />
+            <img src="image/icons8-facebook-48.png" alt="" class="contact-us-phone-icon" /> 
+        </div> -->
+        <div class="footer-section">
+            <h4>Subscribe</h4>
+            <form>
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 ZebraContractors. All rights reserved.</p>
+    </div>
+</footer> 
+
+</body>
+</html>

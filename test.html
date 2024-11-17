@@ -1,0 +1,64 @@
+<section class="contact-us-section" id="contact">
+    <link rel="stylesheet" href="contactstyle.css">
+    <h2 class="contact-us-title">Contact Us</h2>
+    <div class="contact-us-content">
+        <div class="contact-us-columns">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d369107.5366642906!2d-79.7076989920169!3d43.7177675396109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON!5e0!3m2!1sen!2sca!4v1721852475836!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact-us-form-column">
+                <div class="contact-us-hours">
+                    <p class="contact-us-hours-text">
+                        Hours<br /><br />
+                        Mon-Fri 8 am - 5 pm<br />
+                        Sat-Sun 9 am - 5 pm<br />
+                    </p>
+                </div>
+                <form class="contact-us-form" name="submit-to-google-sheet">
+                    <div class="contact-us-form-row">
+                        <label for="name" class="visually-hidden">Name</label>
+                        <input type="text" id="name" placeholder="Name" class="contact-us-form-input" required />
+                        <label for="email" class="visually-hidden">Email</label>
+                        <input type="email" id="email" placeholder="Email" class="contact-us-form-input" required />
+                    </div>
+                    <label for="phone" class="visually-hidden">Contact number</label>
+                    <input type="tel" id="phone" placeholder="Contact number" class="contact-us-form-input" required />
+                    <label for="comments" class="visually-hidden">Comments</label>
+                    <textarea id="comments" placeholder="Comments" class="contact-us-form-textarea" required></textarea>
+                    <button type="submit" class="contact-us-form-submit">Send</button>
+                    <p id="msg" class="contact-us-form-message"></p>
+                </form>
+            </div>
+        </div>
+        <div class="contact-us-social">
+            <div class="contact-us-social-icons">
+                <img src="image/icons8-microsoft-outlook-2019-48.png" alt="" class="contact-us-social-icon" />
+                <img src="image/icons8-instagram-48.png" alt="" class="contact-us-social-icon-small" />
+            </div>
+            <div class="contact-us-phone">
+                <img src="image/icons8-facebook-48.png" alt="" class="contact-us-phone-icon" />
+                <span class="contact-us-phone-number">647-773-3956</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    const scriptURL = 'YOUR_DEPLOYED_SCRIPT_URL_HERE';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById('msg');
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully";
+                setTimeout(() => { msg.innerHTML = ""; }, 5000);
+                form.reset();
+            })
+            .catch(error => {
+                msg.innerHTML = "Error: " + error.message;
+                setTimeout(() => { msg.innerHTML = ""; }, 5000);
+            });
+    });
+</script>

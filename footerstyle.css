@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section p, 
+.footer-section a {
+    margin: 5px 0;
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer-section-icons{
+    display: flex;
+    gap: 5px;
+    aspect-ratio: 1;
+    object-fit: contain;
+    width: 50px;
+    margin-left: 540px;
+    margin-top: 50px;
+    /* margin-top:20px; */
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.footer-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-section button[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-section button[type="submit"]:hover {
+    background-color: #777;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #444;
+}
+
+/* <> */
+
+/* Your existing CSS */
+.footer-section a {
+    margin: 5px 10px; /* Adjust spacing */
+    color: #ddd;
+    text-decoration: none;
+    font-size: 24px; /* Adjust icon size */
+}
+
+.footer-section a:hover {
+    color: #fff;
+}

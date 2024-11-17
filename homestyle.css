@@ -1,0 +1,435 @@
+  .header {
+  background-color: #fff;
+  padding: auto;
+  border-bottom: 1px solid #fff;
+  box-shadow: 0 2px 4px rgba(245, 243, 243, 0.1);
+  text-align:left;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.mute-status {
+  position: absolute;
+  top: 565px;
+  left: 1306px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#Audio-icon{
+  position: absolute;
+  top: 520px;
+  left: 1306px;
+  /* background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px; */
+
+}
+
+#constructionvideo {
+  aspect-ratio: 2.17;
+  object-fit: auto;
+  object-position: center;
+  width: 105%;
+  height: 75%;
+  margin-top: 30px;
+  /* margin-left: 36px; */
+  margin-left: 226px;
+  border: px solid #888484c3;
+  border-radius: 5px;
+  
+  
+}
+
+.separator.gradient {
+  height: 10px;
+  background: linear-gradient(to right, #918c8c, #f9f5f2);
+  margin: 20px 0;
+}
+
+
+
+  @media (max-width: 991px) {
+    .header {
+      padding: 0 20px;
+    }
+  }
+
+  .header-content {
+    display: flex;
+    gap: 20px;
+  }
+  body {
+            margin:auto;
+            padding: 5px; 
+            box-sizing: border-box;
+            border-radius: 5px;
+            height: 500vh;
+          }
+      
+.header-content {
+          /* background-image: url('image/zebragif.gif');
+          background-size: 400px; */
+            background-color: #faf5f59e;
+            border: px solid #8a8585e3;
+            padding: -600px;
+        }
+
+        /* @keyframes moveBackground{
+          from {
+              background-position: 0 0;
+          }
+          to {
+              background-position: 100% 0;
+          }
+      } */
+    
+
+  @media (max-width: 991px) {
+    .header-content {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+      
+    }
+  }
+
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 84%;
+    margin-left: 0;
+  }
+
+  @media (max-width: 991px) {
+    .hero-section {
+      width: 100%;
+    }
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    color: #000;
+    font-weight: 700;
+  }
+  
+
+  @media (max-width: 991px) {
+    .hero-content {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+
+  .tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+  @media (max-width: 991px) {
+
+    .hero-image {
+      max-width: 100%;
+    }
+  }
+
+.hero-text {
+        font-size: 24px; /* Adjust font size as needed */
+        font-family: 'Lexend Tera', sans-serif; /* Change font family */
+        font-weight: bold; /* Make the text bold */
+        color: #333; /* Set text color */
+        text-align: center; /* Center align the text */
+        animation: moveLeftToRight 35s linear infinite; 
+    }
+
+    .hero-text-with-padding {
+        padding: 20px; /* Add padding around the text */
+        background-color: #eeebebb7; /* Set background color */
+        border: px solid #8a8585e3;
+        border-radius: 5px; /* Add rounded corners */
+        margin-top: 30px;
+        position: relative;
+        
+    }
+
+  #datetime {
+    font-size: small;
+    margin-top: 6px;
+  }
+
+@keyframes moveLeftToRight {
+    0% {
+        right: -100%; /* Start from the right side */
+    }
+    100% {
+        right: 100%; /* Move to the left side */
+    }
+}
+
+
+  @media (max-width: 991px) {
+    .hero-text {
+      max-width: 100%;
+      margin-top: 6px;
+    }
+  }
+
+  .nav-section {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 16%;
+    margin-left: 20px;
+  }
+
+  @media (max-width: 991px) {
+    .nav-section {
+      width: 100%;
+    }
+  }
+
+  .nav-content {
+    display: flex;
+    margin-top: 58px;
+    flex-direction: column;
+    color: #000;
+    text-align: center;
+  }
+
+  @media (max-width: 991px) {
+    .nav-content {
+      margin-top: 40px;
+    }
+  }
+
+  .nav-title {
+  font-family: "Lexend Tera", sans-serif;
+  font-weight: 1000px; /* Increased font weight */
+  font-size: 30px;
+  text-align: left;
+  /* margin-left: -15px; */
+  margin-top: 15px;
+  margin-left: -1170px;
+  }
+
+  .hero-logo {
+    margin-left: -1190px;
+    width: 80%;
+  }
+  
+    .nav-link {
+    background-color: #afb4af; 
+    border: none;
+    color: rgb(16, 16, 16);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.8s, transform 0.8s; 
+  }  
+
+  .nav-link:hover {
+    /* background-color: #b9bdb9;  */
+    transform: scale(2.05); 
+  }  
+
+  .nav-links {
+    display: flex;
+    margin-top: 17px;
+    /* padding-left: 30px; */
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: -2270px;
+  }
+
+  @media (max-width: 991px) {
+    .nav-links {
+      padding-left: 20px;
+    }
+  }
+
+  .nav-link {
+    font-family: "Lexend Tera", sans-serif;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+  }
+
+  .nav-link-contractors {
+    align-self:normal;
+    margin-left: 10px;
+    font: 400 18px "Lexend Tera", sans-serif;
+    text-align: center;
+    
+  }
+
+ .nav-link-about {
+  align-self: center;
+  margin-top: 50px;
+  margin-left: -150px;
+  font-family: 'Lexend Tera', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  transition: color 0.8s ease , transform 0.8s; /* Adding transition for smooth color change */
+
+}
+
+.nav-link-about:hover {
+  color: #bdb6b6; /* Changing color on hover */
+  
+}
+.nav-link-services:hover {
+  color: #bdb6b6; /* Changing color on hover */
+  
+}
+.nav-link-portfolio:hover {
+  color: #bdb6b6; /* Changing color on hover */
+  
+}
+.nav-link-contact:hover {
+  color: #bdb6b6; /* Changing color on hover */
+  
+}
+.nav-link-team:hover {
+  color: #bdb6b6; /* Changing color on hover */
+  
+}
+
+  @media (max-width: 991px) {
+    .nav-link-about {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #fff;
+      
+    }
+  }
+
+  .nav-link-services {
+    align-self: center;
+    margin-top: 37px;
+    font: 400 18px "Lexend Tera", sans-serif;
+    margin-left: -150px;
+    
+  }
+
+  .nav-link-portfolio {
+    align-self: center;
+    margin-top: 37px;
+    font: 400 18px "Lexend Tera", sans-serif;
+    margin-left: -150px;
+    
+
+  }
+
+  .nav-link-team {
+    align-self: center;
+    margin: 37px 0 0 16px;
+    font: 400 18px "Lexend Tera", sans-serif;
+    margin-left: -150px;
+   
+
+  }
+
+  .nav-link-contact {
+    align-self: center;
+    margin-top: 36px;
+    font: 400 18px "Lexend Tera", sans-serif;
+    margin-left: -150px;
+    
+
+  }
+
+  @media (max-width: 767px) {
+    .header {
+      padding: 20px;
+    }
+
+    .header-content {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .hero-section {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    .hero-content {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    .hero-text {
+      margin-top: 30px;
+    }
+
+     .nav-section {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 40px;
+    } 
+    
+}
+
+  @media (max-width: 991px) {
+    .nav-section {
+      position: static;
+      width: 100%;
+      padding: 0;
+      box-shadow: none;
+    }
+
+    .nav-content {
+      margin-top: 20px;
+    }
+
+    .nav-title {
+      font-size: 24px;
+    }
+
+    .nav-title1 {
+      font-size: 5px;
+    }
+
+    .nav-links {
+      padding-left: 0;
+      align-items: center;
+    }
+
+    .nav-link {
+      margin: 10px 0;
+    }
+
+    .nav-link-contractors {
+      margin-left: 0;
+    }
+
+    .nav-link-about {
+      margin: 20px 0;
+    }
+
+    .nav-link-services,
+    .nav-link-portfolio,
+    .nav-link-team,
+    .nav-link-contact {
+      margin: 10px 0;
+    }
+}
+  
